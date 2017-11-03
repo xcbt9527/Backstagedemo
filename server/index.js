@@ -12,7 +12,8 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-
+// 访问静态资源文件 这里是访问所有dist目录下的静态资源文件   后期部署在node上面会
+app.use(express.static(path.resolve(__dirname, '../dist')))
 // 后端api路由
 // app.use('/api/user', userApi);
 
