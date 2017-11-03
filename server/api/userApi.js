@@ -44,11 +44,11 @@ router.post('/addUser', (req, res) => {
 router.post('/login', (req, res) => {
   var sql = $sql.user.select;
   var params = req.body;
+  console.log(req.cookies.islogin); //登录cookies
   if (!params.password || !params.username) {
     jsonWrite(res, null, 10001, '账号密码不能为空');
     return;
   }
-  console.log(res.cookie.islogin);
   var password = params.password + 'momo';
   conn.query(sql, [params.username], function (err, result) {
     if (err) {

@@ -6,7 +6,8 @@ const path = require('path')
 const bodyParser = require('body-parser')
 const express = require('express')
 const app = express()
-
+const cookieParser = require('cookie-parser')
+app.use(cookieParser());
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 // 访问静态资源文件 这里是访问所有dist目录下的静态资源文件   后期部署在node上面会
