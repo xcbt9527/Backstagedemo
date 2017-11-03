@@ -1,11 +1,14 @@
 # developertools
 
 > This is a express based and Vue developer tools
+>The framework will increase to NPM in the future
 
 ## Build Setup
 
 ``` bash
 # install dependencies
+npm install
+cd server
 npm install
 
 # serve with hot reload at localhost:8080
