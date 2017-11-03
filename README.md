@@ -1,6 +1,6 @@
 # developertools
 
-> This is a express based and Vue developer tools
+> This is a based express and Vue developer tools
 >The framework will increase to NPM in the future
 
 ## Build Setup
