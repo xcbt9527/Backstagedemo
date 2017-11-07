@@ -2,9 +2,12 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <form>
+      <Input v-model="username" placeholder="Enter something..." style="width: 300px"></Input>
       <input type="text" name="username" v-model="userName"> <br>
       <input type="text" name="age" v-model="password"> <br>
       <a href="javascript:;" @click="addUser">提交</a>
+      <Switch v-model="switch1"></Switch>
+      <Progress :percent="25"></Progress>
     </form>
   </div>
 </template>
@@ -18,7 +21,8 @@
       return {
         msg: 'Welcome to Your Vue.js App',
         userName: '',
-        password: ''
+        password: '',
+        switch1: false,
       }
     },
     methods: {
