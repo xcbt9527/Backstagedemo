@@ -27,7 +27,7 @@
     },
     methods: {
       addUser() {
-        this.$http.post('/api/user/login', {username: this.userName, password: this.password}, {}).then((response) => {
+        this.$http.post('http://localhost:3000/api/user/login', {username: this.userName, password: this.password}, {}).then((response) => {
           console.log(response.body);
         })
       }
